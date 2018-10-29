@@ -17,11 +17,11 @@ var color = d3.scaleLinear().domain([0, 1/4*5000000, 2/4*5000000, 3/4*5000000, 5
 // sets x and y scale to determine size of visible boxes
 var x = d3.scaleLinear()
     .domain([0, width])
-    .range([0, width]);
+    .range([1, width]);
 
 var y = d3.scaleLinear()
     .domain([0, height])
-    .range([1, height]);
+    .range([2, height]);
 
 var treemap = d3.treemap()
         .size([width, height])
@@ -177,16 +177,20 @@ d3.json("assets/data/us.json", function(data) {
             treemap(root
             .sum(function (d) {
                 if (treeSumSortType == "number") {
-                    color = d3.scaleLinear().domain([0, 1/4*5000000, 2/4*5000000, 3/4*5000000, 5000000]).range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
+                    color = d3.scaleLinear().domain([0, 1/4*5000000, 2/4*5000000, 3/4*5000000, 5000000]).range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+                        //.range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
                     return d["Total College"];
                 } else if (treeSumSortType == "percent") {
-                    color = d3.scaleLinear().domain([0, 1/4*50, 2/4*50, 3/4*50, 50]).range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
+                    color = d3.scaleLinear().domain([0, 1/4*50, 2/4*50, 3/4*50, 50]).range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+                        //.range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
                     return d["Percent College"];
                 } else if (treeSumSortType == "male") {
-                    color = d3.scaleLinear().domain([0, 1/4*50, 2/4*50, 3/4*50, 50]).range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
+                    color = d3.scaleLinear().domain([0, 1/4*50, 2/4*50, 3/4*50, 50]).range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+                        //.range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
                     return d["Percent College - Male"];
                 } else {
-                    color = d3.scaleLinear().domain([0, 1/4*50, 2/4*50, 3/4*50, 50]).range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
+                    color = d3.scaleLinear().domain([0, 1/4*50, 2/4*50, 3/4*50, 50]).range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b"]);
+                        //.range(["#73c3bf", "#a1d8c8", "#cbe0a7", "#f2db84"]);
                     return d["Percent College - Female"];
                 }
 
