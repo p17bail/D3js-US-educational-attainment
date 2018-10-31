@@ -8,6 +8,7 @@
     <link href="assets/stylesheets/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	
 </head>
   <header>
        <nav>
@@ -21,11 +22,11 @@
         </nav>
     </header>
 <body>
-    <h1 class="title">Educational Attainment in the United States</h1>
+  <h1 class="title" onmouseover="responsiveVoice.speak('Educational Attainment in the United States','English Female');" onmouseleave="responsiveVoice.cancel();">Educational Attainment in the United States</h1>
         
 	
 	<p><br></p>
-    <h2 class="subtitle">Nation-Wide Education Level of Population in Schooling</h2>
+    <h2 class="subtitle" onmouseover="responsiveVoice.speak('Nation-Wide Education Level of Population in Schooling','US English Female');" onmouseleave="responsiveVoice.cancel();">Nation-Wide Education Level of Population in Schooling</h2>
 	
     <svg id="pie-chart" width="960" height="450"></svg><a name="regional"></a>
     <p><br><br><br></p>
@@ -68,6 +69,7 @@
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
 <script type="text/javascript" src="assets/scripts/sound-mouseover.js"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 	
 <script>
     $( document ).ready(function() {
