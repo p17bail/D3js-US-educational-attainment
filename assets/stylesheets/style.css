@@ -92,9 +92,9 @@ label{
 .radio-toolbar label {
 
   display: inline-block;
-  background-color: #9F789B;
+  background-color: #9f789b;
   padding: 4px 11px;
-  font-family: " Helvetica";
+  font-family:  Helvetica;
   font-size: 18px;
   cursor: pointer;
 }
