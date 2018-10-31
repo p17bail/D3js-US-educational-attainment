@@ -12,7 +12,7 @@ var yscale = d3.scaleLinear()
 	           .range([height, 0]);
 
 var colors = d3.scaleOrdinal()
-  .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+  .range(["#ffdab9", "#ffa07a", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
 //.range(["#177E89", "#0a5971", "#0f436f", "#444b80", "#664d83", "#95457c", "#9a295d"]);
 //.range(["#0a5971", "#177E89", "#4b8e77", "#a9ad70", "#ccb221", "#cb8b25", "#DB3A34"]);
 //.range(["#ef9999", "#e8b9ae", "#d8cdb3", "#90afa2", "#6f94a3", "#607495", "#4e5684"]);
