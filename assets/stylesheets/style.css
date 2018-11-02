@@ -96,10 +96,11 @@ label{
   font-family: "Muli";
   font-size: 15px;
   cursor: pointer;
+  border-style: ridge;
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: orange;
+  background-color: #f46e42;
 }
 
 
