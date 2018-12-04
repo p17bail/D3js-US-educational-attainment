@@ -15,9 +15,9 @@
        <nav>
     <ul id="nav">
       <li><a href="#top" onmouseover="playclip();" >Top</a></li>
-      <li><a href="#national" onmouseover="playclip();">National</a></li>
-      <li><a href="#regional" onmouseover="playclip();">Regional</a></li>
-      <li><a href="#state" onmouseover="playclip();">State-Level</a></li>
+      <li><a href="#national" onclick="showhide('nationwide');" onmouseover="playclip();">National</a></li>
+      <li><a href="#regional" onclick="showhide('regionlevel');" onmouseover="playclip();">Regional</a></li>
+      <li><a href="#state" onclick="showhide('statelevel');" onmouseover="playclip();">State-Level</a></li>
     <ul>
         </nav>
     </header>
@@ -36,11 +36,13 @@
 </script>
     <h1 class="title" onmouseover=responsiveVoice.speak($(this).text()) onmouseleave=responsiveVoice.cancel(); >Educational Attainment in the United States</h1>
         
-	
+    <div class="hide" id="nationwide">
 	<p><br></p>
     <h2 class="subtitle" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();>Nation-Wide Education Level of Population in Schooling</h2>
 	
     <svg id="pie-chart" width="960" height="450" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();></svg><a name="regional"></a>
+    </div>
+    <div class="hide" id="regionlevel">
     <p><br><br><br></p>
      <h2 class="subtitle" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();>Educational Attainment: Region-level Breakdown of University Students</h2>
 	
@@ -58,6 +60,8 @@
     </form>
 	<p></p>
     <div id="chart" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();></div>
+    </div>
+    <div class="hide" id="statelevel">
 	<a name="state"></a>
     <p><br><br></p>
    <h2 class="subtitle" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();>Education Level of Population in Schooling: State-level Breakdown</h2>
@@ -72,6 +76,7 @@
     </form>
     <div>
         <svg id="stacked-bar-chart" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();></svg>
+    </div>
     </div>
 
     
@@ -95,6 +100,18 @@
 /* scrollTop() >= 240
    Should be equal the the height of the header
  */
+
+ function showhide(id){
+        if (document.getElementById) {
+          var divid = document.getElementById(id);
+          var divs = document.getElementsByClassName("hide");
+          for(var i=0;i<divs.length;i++) {
+            divs[i].style.display = "none";
+          }
+          divid.style.display = "block";
+        } 
+        return false;
+ }
 </script>
 <audio>
 <source src="assets/sound/click.mp3"></source>
