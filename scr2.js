@@ -14,7 +14,7 @@ var colors = d3.scale.category20();
 
 var nodes = [
       { name: "EU Countries"},
-      { name: "Belgium=732pp", target: [0], value: 58 },
+      { name: "Belgium=18 318M CubicMetres", target: [0], value: 58 },
       { name: "Bulgaria=708pp", target: [0, 1], value: 65 },  
       { name: "Denmark=178pp", target: [0, 1, 2], value: 52 },
       { name: "Germany=3.459pp", target: [0, 3], value: 48 }, 
