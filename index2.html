@@ -1,35 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <title>Data Visualisations</title>
-    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel='stylesheet' href='https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css'>
-	<link rel="stylesheet" href="assets/stylesheets/style.css">
+  <meta charset="UTF-8">
+<title>3NewD3jsGraphs</title>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet/style.css">
+ <script type="text/javascript" src="mouseover.js"></script>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.js"></script>
 </head>
-<html>
-  <body>
-	<h1 class="title"> Γραφική αναπαράσταση στατιστικών στοιχείων</h1>
-	<p><br><br></p>
-	<p><br><br></p>
-	<h2 class="subtitle">Θάνατοι από καρκίνο σε ευρωπαϊκές χώρες (% ποσοστό των συνολικών θανάτων)</h2>
-	<p><br><br></p>
-    <svg id="bar-chart" width="960" height="500"></svg>
-    <script src="assets/scripts/script1_3.js"></script>
-	<p><br><br></p>
-	<h2 class="subtitle">Αριθμός εκμεταλλεύσεων με οπωροφόρα, 2012</h2>
-	<p><br><br></p>
-	<div id="chart2"><svg height="400"></svg></div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
-    <script src='https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js'></script>
-	<script  src="assets/scripts/script2_3.js"></script>
-	<p><br><br></p>
-	<h2 class="subtitle">ΑΚΑΘΑΡΙΣΤΟ ΕΓΧΩΡΙΟ ΠΡΟΙΟΝ σε αγοραίες τιμές (Σε εκατομμύρια ευρώ)</h2>
-	<p><br><br></p>
-	<div class="chart"><svg id="lineChart" width="700" height="400"></svg></div>
-	<script  src="assets/scripts/script3_3.js"></script>
-	<p><br><br></p>
-  </body>
+
+<header>
+  <div class="custom-padding">
+      <nav>
+        <div class="logo">D3.js</div>
+      <ul class="menu-area">
+          <li><a href="#graph1" onmouseover="playclip();">graph1</a></li>
+          <li><a href="#graph2" onmouseover="playclip();">graph2</a></li>
+          <li><a href="#graph3" onmouseover="playclip();">graph3</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<body>
+
+<p><br><br><br></p>
+
+  <h1>Statistics</h1>
+
+  <p><br><br><br></p>
+	 
+	 <h2 class="subtitle">Total number of people killed in road traffic accidents in EU (2015)</h2>
+	                                         
+<script  src="js/scr2.js"></script>
+
+       <p><br><br><br></p>
+         <p><br><br><br></p>
+       <p><br><br><br></p>
+ 
+ <a name="graph2"></a>
+<h2 class="subtitle">Ανεργία Β' τρίμηνο του 2018 στην Ελλάδα</h2>
+ 
+   <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel">
+          <div class="panel-body">
+            <form role="form" class="categories">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="graph"></div>
+      </div>
+    </div>
+  </div>
+ 
+ <p><br><br><br></p>
+     
+	<a name="graph3"></a>
+     <h2 class="subtitle">{Lorem ipsum dolor sit amet}</h2>
+         
+     <p><br><br><br></p>
+	 <p><br><br><br></p>
+	 <p><br><br><br></p>
+	 <p><br><br><br></p>
+	 <p><br><br><br></p>
+	 <p><br><br><br></p>
+	 <p><br><br><br></p>
+	 <p><br><br><br></p>
+       
+      
+     
+     <audio>
+	  <source src="zapsplat_multimedia_click.mp3"></source>
+          <source src="zapsplat_multimedia_click.ogg"></source>
+       </audio>
+         
+  
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.14/d3.js"></script>
+        <script  src="js/scr1.js"></script>
+
+</body>
+
 </html>
