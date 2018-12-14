@@ -38,40 +38,40 @@ nv.addGraph(function() {
 function exampleData() {
   return  [
       { 
-        "label": "Μηλιές",
-        "value" : 12697
+        "label": "Ιταλία",
+        "value" : 753.5
       } , 
       { 
-        "label": "Αχλαδιές",
-        "value" : 7973
+        "label": "Γερμανία",
+        "value" : 504.8
       } , 
       { 
-        "label": "Ροδακινιές",
-        "value" : 20550
+        "label": "Κύπρος",
+        "value" : 456.3
       } , 
       { 
-        "label": "Βερικοκιές",
-        "value" : 8362
+        "label": "Τουρκία",
+        "value" : 449.3
       } , 
       { 
-        "label": "Κερασιές",
-        "value" : 15162
+        "label": "Λίβανος",
+        "value" : 364.4
       } , 
       { 
-        "label": "Πορτοκαλιές",
-        "value" : 53982
+        "label": "Βουλγαρία",
+        "value" : 318.3
       } , 
       { 
-        "label": "Λεμονιές",
-        "value" : 22724
+        "label": "Ην.Βασίλειο",
+        "value" : 259.1
       } , 
       { 
-        "label": "Μικρόκαρπα εσπεριδοειδή",
-        "value" : 17070
+        "label": "Αίγυπτος",
+        "value" : 255.3
       },
 	  { 
-        "label": "Ελιές",
-        "value" : 463889
+        "label": "ΗΠΑ",
+        "value" : 240.0
       }
     ];
 }
